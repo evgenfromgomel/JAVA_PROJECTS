@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.8.2
+Created-By: 1.6.0_26-b03-383-11A511 (Apple Inc.)
+Built-By: Werner Randelshofer
+Main-Class: ch.randelshofer.quaqua.QuaquaManager
+Specification-Title: Quaqua Look and Feel
+Specification-Version: 8.0 2011-10-02
+Specification-Vendor: Werner Randelshofer
+Implementation-Title: Quaqua Look and Feel
+Implementation-Version: 8.0 2011-10-02
+Implementation-Vendor: Werner Randelshofer
+Class-Path: swing-layout.jar /System/Library/Java/
+

@@ -1,0 +1,27 @@
+	.log_bar {
+		height: 30px;
+		margin: 2px;
+	}
+	
+	.search_bar{
+		height: 30px;
+		margin: 2px;
+	}
+	
+	.menu_bar{	
+		text-align: center;
+		width: 166px;
+		float: left;
+		height: 792px;
+		min-height: 300px;
+		font-size: 20px;
+		margin: 2px;
+	}
+	
+	.mail_bar{
+		position: absolute;
+		left: 310px;
+		height:810px;
+		margin: 2px;
+		width: 905px;
+	}

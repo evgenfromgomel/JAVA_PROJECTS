@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/base_styles.css"  />
+<link rel="stylesheet" type="text/css" href="css/bar_specifies.css"  />
+<link rel="stylesheet" type="text/css" href="css/bar_styles.css"  />
+<link rel="stylesheet" type="text/css" href="css/button_styling.css"  />
+<script src='js/base_script.js' ></script>
+<script src='js/button_handle.js' ></script>
+<script src='js/dragNdrop.js' ></script>
+</head>
+
+<body onload='loadData()' >
+
+	<div class = 'central_container' >
+		<div class = 'log_bar , inner_bar' id="testDiv">
+			<div class='button_wrap' id='wrap_but1' onclick="testReq()" onmouseover="evMouseOverBtn('but1')" onmouseout="evMouseOutBtn('but1')">
+				<div class="shadow"></div>
+				<div class="button" id='but1'>Log Out</div>
+			</div>	
+		</div>
+		<div class = 'search_bar , inner_bar'>	
+		
+			<img style="position:relative; left: 3px; float:left;" src='img/search_ico.png'>
+			 <input class='search_field' id='search' value="search" type='text' onkeyup="runSearch('search')" onfocus='srchGetFocus()' onblur='srchLooseFocus()'/>
+			<div class='button_wrap' id='wrap_but2' onclick="" onmouseover="evMouseOverBtn('but2')" onmouseout="evMouseOutBtn('but2')">
+				<div class="shadow"></div>
+				<div class="button" id='but2'>Reply</div>
+			</div>
+			<div class='button_wrap' id='wrap_but3' onclick="" onmouseover="evMouseOverBtn('but3')" onmouseout="evMouseOutBtn('but3')">
+				<div class="shadow"></div>
+				<div class="button" id='but3'>Reply all</div>
+			</div>
+			<div class='button_wrap' id='wrap_but4' onclick="" onmouseover="evMouseOverBtn('but4')" onmouseout="evMouseOutBtn('but4')">
+				<div class="shadow"></div>
+				<div class="button" id='but4'>Delete</div>
+			</div>
+		</div>
+		<div class = 'menu_bar , inner_bar' id='menu'>
+			
+		</div>
+		<div class="dnd" id="drag"></div>
+		<div class="dndBlind" id="drag2"></div>
+		<div class = 'mail_bar , inner_bar' id="mail_bar">
+			<div class='mail_list'>
+<table id="mails">
+<tr>
+<th width= '5%;'><input type='checkbox' id='base_chk_box1' onchange="changeCheking('base_chk_box1')"/></th>
+	<th width= '20%;'>Name</th>
+	<th width= '50%;'>Subject</th>
+	<th>Recived</th>
+</tr>
+
+</table>
+			</div>
+			<div class='mess_text , inner_bar'>
+				<div class='mess_head' id='mess_head'></div>
+				<div class='mess_body'>
+					<textarea id='text_area'></textarea>
+				</div>
+				<div class='mess_foot'></div>
+			</div>
+		</div>	
+	</div>
+		<script>
+		var dragObject = document.getElementById("drag");
+		dragController.makeDraggable(dragObject);    
+	</script>
+</body>
+</html>
