@@ -1,0 +1,63 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnNum1"
+        android:layout_alignBottom="@+id/btnNum1"
+        android:layout_marginLeft="22dp"
+        android:layout_toRightOf="@+id/btnNum1"
+        android:text="+" />
+
+    <Button
+        android:id="@+id/btnSub"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnAdd"
+        android:layout_toRightOf="@+id/btnAdd"
+        android:text="-" />
+
+    <Button
+        android:id="@+id/btnNum1"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnNum0"
+        android:layout_alignBottom="@+id/btnNum0"
+        android:layout_toRightOf="@+id/btnNum0"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/btnRes"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSub"
+        android:layout_alignBottom="@+id/btnSub"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:text="=" />
+
+    <Button
+        android:id="@+id/btnNum0"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="110dp"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/tvDisp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnRes"
+        android:layout_alignRight="@+id/btnRes"
+        android:layout_marginBottom="44dp"
+        android:text="display" />
+
+</RelativeLayout>

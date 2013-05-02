@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SimpleCalculator</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="strBtnNum1">1</string>
+    <string name="strBtnNum2">2</string>
+    <string name="strBtnNum3">3</string>
+    <string name="strBtnNum4">4</string>
+    <string name="strBtnNum5">5</string>
+    <string name="strBtnNum6">6</string>
+    <string name="strBtnNum7">7</string>
+    <string name="strBtnNum8">8</string>
+    <string name="strBtnNum9">9</string>
+    <string name="strBtnDiv">/</string>
+    <string name="strBtnMul">*</string>
+    <string name="strBtnSub">-</string>
+    <string name="strBtnAdd">+</string>
+    <string name="strBtnNum0">0</string>
+    <string name="strBtnDot">.</string>
+    <string name="strBtnEqu">=</string>
+    <string name="strBtnClr">CLR</string>
+    
+    
+    
+    
+    
+    
+   	
+
+</resources>

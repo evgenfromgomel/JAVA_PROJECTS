@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/llBckgBlack"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/llDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="35dp" >
+
+        <TextView
+            android:id="@+id/tvDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/llBckgGray"
+            android:gravity="right"
+            android:textColor="@color/llBckgBlack"
+            android:textSize="20pt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llClearFunc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="right" >
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:text="@string/strBtnClr"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llGroup4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:layout_marginTop="10dp" >
+
+        <Button
+            android:id="@+id/btnNum7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strBtnNum7"
+            android:textSize="8pt" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnNum8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strBtnNum8"
+            android:textSize="8pt" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnNum9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strBtnNum9"
+            android:textSize="8pt" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnDiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strBtnDiv"
+            android:textSize="8pt" >
+        </Button>
+    </LinearLayout>
+    
+     <LinearLayout
+         android:id="@+id/llGroup3"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="5pt"
+         android:layout_marginRight="5pt"
+         android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/btnNum6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strBtnNum6"
+            android:textSize="8pt" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnNum5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strBtnNum5"
+            android:textSize="8pt" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnNum4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strBtnNum4"
+            android:textSize="8pt" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnMul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strBtnMul"
+            android:textSize="8pt" >
+        </Button>
+    </LinearLayout>
+    
+      <LinearLayout
+          android:id="@+id/llGroup2"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="5pt"
+          android:layout_marginRight="5pt"
+          android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/btnNum1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strBtnNum1"
+            android:textSize="8pt" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnNum2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strBtnNum2"
+            android:textSize="8pt" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnNum3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strBtnNum3"
+            android:textSize="8pt" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strBtnSub"
+            android:textSize="8pt" >
+        </Button>
+    </LinearLayout>
+    
+       <LinearLayout
+           android:id="@+id/llGroup1"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="5pt"
+           android:layout_marginRight="5pt"
+           android:layout_marginTop="5dp" >
+
+        <Button
+            android:id="@+id/btnDot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strBtnDot"
+            android:textSize="8pt" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnNum0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strBtnNum0"
+            android:textSize="8pt" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnEqu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strBtnEqu"
+            android:textSize="8pt" >
+        </Button>
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/strBtnAdd"
+            android:textSize="8pt" >
+        </Button>
+    </LinearLayout>
+    
+     
+    
+
+</LinearLayout>

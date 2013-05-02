@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SelectListView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string-array name="names">
+        <item >Игорь</item>
+        <item >Маша</item>
+        <item >Миша</item>
+        <item >Вася</item>
+        <item >Коля</item>
+        <item >Денис</item>
+        <item >Дима</item>
+        <item >Борис</item>
+        <item >Андрей</item>
+        <item >Валентина</item>
+        <item >Жанна</item>
+        <item >Эдуард</item>
+        <item >Павел</item>
+    </string-array>
+
+</resources>
