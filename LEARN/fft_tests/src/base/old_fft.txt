@@ -1,0 +1,95 @@
+
+		int Nvl = 1024;
+		
+		final double TwoPi = 6.283185307179586;
+		
+		double AVal[] = new double[1024];
+		/*for(int i = 0; i < 1024; i++){
+			AVal[i] = i + 1;
+		}*/
+		for(int i = 0; i < 1024; i++){
+			AVal[i] = Math.sin((Math.PI * i) / 10);
+		}
+		
+		int n = Nvl * 2;
+		int j = 0;
+		double Tmvl[] = new double[n + 1];
+		  for (int k = 0; k < Nvl; k++) {
+			    j = k * 2; Tmvl[j] = 0; Tmvl[j+1] = AVal[k];
+			  }
+		
+
+		 int i = 1; j = 1;
+		 double Tmpr = 0;
+		 int m = 0;
+		  while (i < n) {
+		    if (j > i) {
+		      Tmpr = Tmvl[i]; Tmvl[i] = Tmvl[j]; Tmvl[j] = Tmpr;
+		      Tmpr = Tmvl[i+1]; Tmvl[i+1] = Tmvl[j+1]; Tmvl[j+1] = Tmpr;
+		    }
+		    i = i + 2; m = Nvl;
+		    while ((m >= 2) && (j > m)) {
+		      j = j - m; m = m >> 2;
+		    }
+		    j = j + m;
+		  }
+		 
+
+		  int Mmax = 2, Istp = 0;
+		  double Theta = 0, Wpi = 0, Wtmp = 0, Wpr = 0;
+		  double  Wr = 0, Wi = 0, Tmpi = 0;
+		  
+		  while (n > Mmax) {
+		    Theta = -TwoPi / Mmax; Wpi = Math.sin(Theta);
+		    Wtmp = Math.sin(Theta / 2); Wpr = Wtmp * Wtmp * 2;
+		    Istp = Mmax * 2; Wr = 1; Wi = 0; m = 1;
+		 
+		    while (m < Mmax) {
+		      i = m; m = m + 2; Tmpr = Wr; Tmpi = Wi;
+		      Wr = Wr - Tmpr * Wpr - Tmpi * Wpi;
+		      Wi = Wi + Tmpr * Wpi - Tmpi * Wpr;
+		 
+		      while (i < n) {
+		        j = i + Mmax;
+		        Tmpr = Wr * Tmvl[j] - Wi * Tmvl[j+1];
+		        Tmpi = Wi * Tmvl[j] + Wr * Tmvl[j+1];
+		 
+		        Tmvl[j] = Tmvl[i] - Tmpr; Tmvl[j+1] = Tmvl[i+1] - Tmpi;
+		        Tmvl[i] = Tmvl[i] + Tmpr; Tmvl[i+1] = Tmvl[i+1] + Tmpi;
+		        i = i + Istp;
+		      }
+		    }
+		 
+		    Mmax = Istp;
+		  }
+		  int Nft = 512;
+		  double FTvl[] = new double[Nft];
+		  for (i = 1; i < Nft; i++) {
+		    j = i * 2; FTvl[i] = Math.sqrt(Math.pow(Tmvl[j], 2) + Math.pow(Tmvl[j+1], 2));
+		  }
+		 
+		  
+		  
+		  int c = 0;
+		  double max = FTvl[0], sum = 0 ;
+		  for(int k = 1; k < FTvl.length; k++ ){
+			  if(FTvl[k] > max) max = FTvl[k];
+			  sum += FTvl[k];
+			  System.out.println(FTvl[k]);
+			  
+		  }
+		  System.out.println(max);
+		  System.out.println(sum / FTvl.length);
+		 // for(int k = 0; k < Tmvl.length; k ++){ 
+			//  System.out.print(k + ": " + Tmvl[k] + "\n");
+			 /*
+			  if(Tmvl[k] % 2 == 0){
+				  c++;
+				   System.out.print(k + ": " + Tmvl[k] % 2  + "\n");
+			  }else{
+				  System.out.print(k + ": " + Tmvl[k] % 2 + " " + c + "\n");
+				  c = 0;
+			  }
+			*/  
+		  //}
+		  
