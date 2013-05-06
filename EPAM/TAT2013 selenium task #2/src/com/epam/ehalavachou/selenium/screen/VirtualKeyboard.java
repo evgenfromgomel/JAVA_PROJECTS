@@ -3,11 +3,12 @@ package com.epam.ehalavachou.selenium.screen;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-
 import com.epam.ehalavachou.selenium.util.Browser;
 import com.epam.ehalavachou.selenium.util.TextHandler;
+
 
 public class VirtualKeyboard {
 	
@@ -40,8 +41,10 @@ public class VirtualKeyboard {
 	 * In case, if click can be perform, in comments line wrote code, witch must work. 
 	 * */
 	private void typeLetter(String letter){
-		//browser.getElement(makeLocator(letter)).click();
-		browser.getElement(By.xpath("//input[@id='text']")).sendKeys(letter);
+		WebElement button = browser.getElement(makeLocator(letter));
+		WebDriver driver = browser.getDriver();
+		((JavascriptExecutor) driver).executeScript("arguments[0].click()", button);
+		//browser.getElement(By.xpath("//input[@id='text']")).sendKeys(letter);
 	}
 	
 	private void typeSpecialSymbol(String symbol){

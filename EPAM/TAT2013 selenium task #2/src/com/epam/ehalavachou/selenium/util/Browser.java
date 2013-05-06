@@ -24,6 +24,10 @@ public class Browser {
 		webDriver.get(url);
 	}
 	
+	public WebDriver getDriver(){
+		return webDriver;
+	}
+	
 	public void close(){
 		webDriver.quit();
 	}

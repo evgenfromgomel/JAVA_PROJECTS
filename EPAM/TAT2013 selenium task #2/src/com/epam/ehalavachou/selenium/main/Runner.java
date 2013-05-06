@@ -19,7 +19,7 @@ public class Runner {
 	 */
 	public static void main(String[] args) throws InterruptedException {
 		Browser b = Browser.getInstance();
-		List<String> testingData = Resource.getTextToSearch();
+		/*List<String> testingData = Resource.getTextToSearch();
 		List<Test> testsPool = new ArrayList<Test>();
 		for(int i = 0; i < testingData.size(); i++){
 			testsPool.add(new SearchTest());
@@ -27,7 +27,9 @@ public class Runner {
 		for(int i = 0; i < testingData.size(); i++){
 			testsPool.get(i).makeTest(testingData.get(i));
 			b.back();
-		}
+		}*/
+		Test tst = new SearchTest();
+		tst.makeTest("головачев");
 		b.close();
 	
 	}
