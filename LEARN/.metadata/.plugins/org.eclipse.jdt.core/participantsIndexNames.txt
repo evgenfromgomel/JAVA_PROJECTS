@@ -1,0 +1,3 @@
+INDEX VERSION 1.126
+D:\_repositories\JAVA_PROJECTS\LEARN\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1172258922.index
+\Testing\src
