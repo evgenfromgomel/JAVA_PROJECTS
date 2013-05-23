@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Test" failures="1" tests="6" time="0.078" errors="0">
+  <properties/>
+  <testcase name="testInvalidInterval" time="0.0" classname="num.NegativeTestsNG">
+    <failure type="java.lang.AssertionError" message="expected:&amp;lt;a number next time&amp;gt; but was:&amp;lt;higher&amp;gt;">
+      <![CDATA[java.lang.AssertionError: expected:<a number next time> but was:<higher>
+	at num.NegativeTestsNG.testInvalidInterval(NegativeTestsNG.java:38)
+... Removed 27 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="testNotAnInteger" time="0.0" classname="num.NegativeTestsNG"/>
+  <testcase name="testDefaultValues" time="0.016" classname="num.PositiveTestsNG"/>
+  <testcase name="testGreaterThanAnswer" time="0.0" classname="num.PositiveTestsNG"/>
+  <testcase name="testLessThanAnswer" time="0.0" classname="num.PositiveTestsNG"/>
+  <testcase name="testReset" time="0.015" classname="num.TestResetMethodNG"/>
+</testsuite>

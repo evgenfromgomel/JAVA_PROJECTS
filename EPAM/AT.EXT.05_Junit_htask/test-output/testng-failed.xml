@@ -1,0 +1,26 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="5" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [Suite]" junit="false" parallel="false" annotations="JDK" data-provider-thread-count="10">
+  <test name="Test(failed)" junit="false" parallel="false" annotations="JDK">
+    <classes>
+      <class name="num.TestResetMethodNG">
+        <methods>
+          <include name="testPreparation"/>
+          <include name="testFinalisation"/>
+        </methods>
+      </class>
+      <class name="num.NegativeTestsNG">
+        <methods>
+          <include name="testFinalisation"/>
+          <include name="testPreparation"/>
+          <include name="testInvalidInterval"/>
+        </methods>
+      </class>
+      <class name="num.PositiveTestsNG">
+        <methods>
+          <include name="testFinalisation"/>
+          <include name="testPreparation"/>
+        </methods>
+      </class>
+    </classes>
+  </test>
+</suite>

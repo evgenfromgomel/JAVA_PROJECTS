@@ -1,0 +1,18 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="JU" duration-ms="47" started-at="2010-05-19T19:35:53Z" finished-at="2010-05-19T19:35:53Z">
+    <groups>
+    </groups>
+    <test name="num.TestVictoryNG" duration-ms="47" started-at="2010-05-19T19:35:53Z" finished-at="2010-05-19T19:35:53Z">
+      <class name="num.TestVictoryNG">
+        <test-method status="PASS" signature="testPreparation()" name="testPreparation" is-config="true" duration-ms="0" started-at="2010-05-19T19:35:53Z" finished-at="2010-05-19T19:35:53Z">
+        </test-method>
+        <test-method status="PASS" signature="testOneCanWin()" name="testOneCanWin" duration-ms="16" started-at="2010-05-19T19:35:53Z" finished-at="2010-05-19T19:35:53Z">
+        </test-method>
+        <test-method status="PASS" signature="testFinalisation()" name="testFinalisation" is-config="true" duration-ms="0" started-at="2010-05-19T19:35:53Z" finished-at="2010-05-19T19:35:53Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

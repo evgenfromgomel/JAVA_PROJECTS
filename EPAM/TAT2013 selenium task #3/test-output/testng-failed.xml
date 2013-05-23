@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Task3suite]">
+  <test name="Task3tests(failed)">
+    <classes>
+      <class name="com.epam.ehalavachou.selenium.test.TestLoginNegative">
+        <methods>
+          <include name="assertLoginNegative"/>
+        </methods>
+      </class> <!-- com.epam.ehalavachou.selenium.test.TestLoginNegative -->
+    </classes>
+  </test> <!-- Task3tests(failed) -->
+</suite> <!-- Failed suite [Task3suite] -->

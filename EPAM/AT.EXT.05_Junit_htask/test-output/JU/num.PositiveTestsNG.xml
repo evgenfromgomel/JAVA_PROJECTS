@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="num.PositiveTestsNG" failures="0" tests="3" time="0.047" errors="0">
+  <properties/>
+  <testcase name="testDefaultValues" time="0.0" classname="num.PositiveTestsNG"/>
+  <testcase name="testGreaterThanAnswer" time="0.016" classname="num.PositiveTestsNG"/>
+  <testcase name="testLessThanAnswer" time="0.0" classname="num.PositiveTestsNG"/>
+</testsuite>

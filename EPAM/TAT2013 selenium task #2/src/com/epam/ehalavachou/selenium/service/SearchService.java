@@ -1,6 +1,5 @@
 package com.epam.ehalavachou.selenium.service;
 
-import com.epam.ehalavachou.selenium.screen.Screen;
 import com.epam.ehalavachou.selenium.screen.SearchScreen;
 
 public class SearchService {
@@ -11,7 +10,7 @@ public class SearchService {
 	public SearchService() {
 		screen = new SearchScreen();
 	}
-	
+	 
 	public void findText(String text){
 		screen.typeSearchTextByVK(text).submitSearch();
 	}

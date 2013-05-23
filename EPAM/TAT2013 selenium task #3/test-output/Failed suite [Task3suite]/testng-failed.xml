@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Task3suite]]" parallel="none">
+  <test name="Task3tests(failed)(failed)" parallel="none">
+    <classes>
+      <class name="com.epam.ehalavachou.selenium.test.TestLoginNegative">
+        <methods>
+          <include name="assertLoginPositive"/>
+        </methods>
+      </class> <!-- com.epam.ehalavachou.selenium.test.TestLoginNegative -->
+      <class name="com.epam.ehalavachou.selenium.test.TestLoginPositive">
+        <methods>
+          <include name="assertLoginPositive"/>
+        </methods>
+      </class> <!-- com.epam.ehalavachou.selenium.test.TestLoginPositive -->
+    </classes>
+  </test> <!-- Task3tests(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Task3suite]] -->

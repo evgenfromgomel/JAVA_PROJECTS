@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="0" started-at="2013-05-07T16:02:19Z" finished-at="2013-05-07T16:02:19Z">
+    <groups>
+    </groups>
+  </suite> <!-- Default Suite -->
+  <suite name="Task3suite" duration-ms="165223" started-at="2013-05-07T15:59:32Z" finished-at="2013-05-07T16:02:17Z">
+    <groups>
+    </groups>
+    <test name="Task3tests" duration-ms="165223" started-at="2013-05-07T15:59:32Z" finished-at="2013-05-07T16:02:17Z">
+      <class name="com.epam.ehalavachou.selenium.test.TestLoginPositive">
+        <test-method status="PASS" signature="assertLoginPositive()[pri:0, instance:com.epam.ehalavachou.selenium.test.TestLoginPositive@14ac54]" name="assertLoginPositive" duration-ms="90124" started-at="2013-05-07T18:59:32Z" finished-at="2013-05-07T19:01:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertLoginPositive -->
+      </class> <!-- com.epam.ehalavachou.selenium.test.TestLoginPositive -->
+      <class name="com.epam.ehalavachou.selenium.test.TestTimeDiffComparation">
+        <test-method status="PASS" signature="assertTimeDiff()[pri:0, instance:com.epam.ehalavachou.selenium.test.TestTimeDiffComparation@665e41]" name="assertTimeDiff" duration-ms="28178" started-at="2013-05-07T19:01:49Z" finished-at="2013-05-07T19:02:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertTimeDiff -->
+      </class> <!-- com.epam.ehalavachou.selenium.test.TestTimeDiffComparation -->
+      <class name="com.epam.ehalavachou.selenium.test.TestLoginNegative">
+        <test-method status="PASS" signature="assertLoginNegative()[pri:0, instance:com.epam.ehalavachou.selenium.test.TestLoginNegative@13de2bd]" name="assertLoginNegative" duration-ms="46905" started-at="2013-05-07T19:01:02Z" finished-at="2013-05-07T19:01:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- assertLoginNegative -->
+      </class> <!-- com.epam.ehalavachou.selenium.test.TestLoginNegative -->
+    </test> <!-- Task3tests -->
+  </suite> <!-- Task3suite -->
+</testng-results>

@@ -1,2 +1,2 @@
 eclipse.preferences.version=1
-task-tag-projects-already-scanned=MailClientServer,MailClientServer2,MassenagerServer,MessenagerClient,TheGame
+task-tag-projects-already-scanned=MassenagerServer,MessenagerClient,TheGame,getIP,WinApp

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Task3suite" parallel="false">
+  <test name="Task3tests">
+    <classes>
+      <class name="com.epam.ehalavachou.selenium.test.TestLoginPositive"/>
+      <class name="com.epam.ehalavachou.selenium.test.TestLoginNegative"/>
+      <class name="com.epam.ehalavachou.selenium.test.TestTimeDiffComparation"/>
+    </classes>
+  </test> <!-- Task3tests -->
+</suite> <!-- Task3suite -->
