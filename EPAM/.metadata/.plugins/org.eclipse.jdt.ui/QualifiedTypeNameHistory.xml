@@ -25,7 +25,6 @@
 <fullyQualifiedTypeName name="org.testng.TestNG"/>
 <fullyQualifiedTypeName name="com.epam.ehalavachou.selenium.resource.Resource"/>
 <fullyQualifiedTypeName name="com.epam.ehalavachou.selenium.main.Runner"/>
-<fullyQualifiedTypeName name="com.epam.ehalavachou.selenium.util.Browser"/>
 <fullyQualifiedTypeName name="com.epam.ehalavachou.selenium.service.TimeCompareService"/>
 <fullyQualifiedTypeName name="num.NumberGuessBean"/>
 <fullyQualifiedTypeName name="org.junit.Before"/>
@@ -49,10 +48,13 @@
 <fullyQualifiedTypeName name="ru.yandex.qatools.htmlelements.element.Button"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.By"/>
 <fullyQualifiedTypeName name="org.testng.annotations.Factory"/>
-<fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
 <fullyQualifiedTypeName name="org.apache.bcel.generic.Select"/>
 <fullyQualifiedTypeName name="com.epam.ehalavachou.selenium.screen.YandexMailScreen"/>
 <fullyQualifiedTypeName name="ru.yandex.qatools.htmlelements.element.Select"/>
 <fullyQualifiedTypeName name="ru.yandex.qatools.htmlelements.loader.HtmlElementLoader"/>
+<fullyQualifiedTypeName name="com.epam.ehalavachou.selenium.util.Browser"/>
+<fullyQualifiedTypeName name="org.openqa.selenium.support.FindBy"/>
+<fullyQualifiedTypeName name="ru.yandex.qatools.htmlelements.element.Link"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.WebElement"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>

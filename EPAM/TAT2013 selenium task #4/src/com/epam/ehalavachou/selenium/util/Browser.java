@@ -44,6 +44,10 @@ public class Browser {
 		return webDriver;
 	}
 	
+	public WebElement getElement(By locator){
+		return webDriver.findElement(locator);
+	}
+	
 	public static void setImplicitlyWait(int duration){
 		webDriver.manage().timeouts().implicitlyWait(duration, TimeUnit.SECONDS);
 	}
@@ -62,9 +66,9 @@ public class Browser {
 	}
 	
     public  boolean isElementPresent(By locator) {
-    	webDriver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+    	setImplicitlyWait(0);
         List<WebElement> elements = webDriver.findElements(locator);
-        webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        setImplicitlyWait(30);
         return elements.size() > 0 && elements.get(0).isDisplayed();
     }
 	

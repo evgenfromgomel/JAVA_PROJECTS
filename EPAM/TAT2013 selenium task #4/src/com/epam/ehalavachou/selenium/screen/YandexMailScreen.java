@@ -5,7 +5,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.annotations.Factory;
 
 import ru.yandex.qatools.htmlelements.element.Button;
 import ru.yandex.qatools.htmlelements.element.Link;
@@ -19,6 +18,11 @@ public class YandexMailScreen extends Screen {
 	
 	@FindBy(xpath = "//a[@title='Написать']")
 	public Link composeButton;
+	
+	@FindBy(xpath = "//a[@title='Отправленные']")
+	public Link sentMailsLink;
+	
+	
 	
 	@FindBy(css = "div.js-compose-mail-input_to > input.b-mail-input_yabbles__focus")
 	public WebElement mailToField;
@@ -71,22 +75,33 @@ public class YandexMailScreen extends Screen {
 	public YandexMailScreen clickSend(){
 		Browser.setImplicitlyWait(30);
 		sendButton.click();
+		
 		return this;
 	}
 	
-	public YandexMailScreen checkMail(String subject){
-		Browser.setImplicitlyWait(30);
-		String locator = String.format("//span[@title='%1s']/../../../label/input", subject);
-		WebElement mailSelect1 = browser.getDriver().findElement(By.xpath(locator));
+	public YandexMailScreen selectMessage(String subject){
+		WebElement mailSelect1 = browser.getElement(makeMailLocator(subject));
 		mailSelect1.click();
 		return this;
 	}
 	
-	public boolean isMessageSent(){
+	
+	public boolean isMessageSent(String subject){
+		Browser.setImplicitlyWait(30);
+	//	sentMailsLink.click();
+		boolean sent = false;
 		Browser.setImplicitlyWait(30);
 		By sendSuccessMessBox = By.xpath("//div[text()='Письмо успешно отправлено.']");
-		if(browser.isElementPresent(sendSuccessMessBox)) return true;
-		else return false;
+		if(browser.getElement(sendSuccessMessBox).isDisplayed())  sent = true;
+	//	if(browser.isElementPresent(makeMailLocator(subject))) sent = true;
+		else sent = false;
+		return sent;
+	}
+	
+	private By makeMailLocator(String subject){
+		String locatorStr = String.format("//span[@title='%1s']/../../../label/input", subject);
+		By locator = By.xpath(locatorStr);
+		return locator;
 	}
 	
 }
